@@ -24,7 +24,9 @@ The purpose of this exercise is to see when 'parity' first occured during a spor
 
 ### Sports Leagues  
 
-Currently only AFL (Australian Football League) is set up to run with this code so far. Might introduce other leages in the future (with a strong preference to free APIs...), have designed this code using a simple factory pattern to help ease any future enhancements.  
+Currently only AFL (Australian Football League) is set up to run with this code so far. This [API](https://api.squiggle.com.au/) has been kindly built by [Squiggle](https://squiggle.com.au/) for hobbiest use, so treat it nicely like a good community should. Please respect the [How to be nice](https://api.squiggle.com.au/#section_bots) rules.  
+  
+Might introduce other leagues in the future (with a strong preference to free APIs...), have designed this code using a simple factory pattern to help ease any future enhancements.  
   
 If you don't care about how the code works and just want to run it for yourself you can skip down to the [How to run](#how-to-run) section.  
 
@@ -60,7 +62,7 @@ Utilises a basic factory design pattern, with the `APICreator` class in `./src/a
 
 Only the AFL concrete class has (so far) been created, but this can be used a template for integrating other sports results APIs, just needing to ensure the API data is parsed into the pydantic model classes in `./src/api/models.py` in the new concrete class, then the creator and client will be able to search them for hamiltonian cycles without any further work being required. `APICreator` is an instance of an abstract class, which provides universal methods for extracting, downloading, caching API response data, thus only a new concrete class needs be generated, along with providing syntax and accepted values for the command line arguments and config, found in `./utils/`.  
 
-As always, remember your pytests.  
+As always, remember your pytests and be nice to your API provider.  
   
 ## How to run  
 
@@ -73,6 +75,8 @@ The script is called using two mandatory command line arguments, and one optiona
 |-c| Clear Cache, _bool_, purged cached API response data for that league/season | (switch only)|
 
 For example, running `python -m hamiltoniansports -l afl -s 2023` will run the hamiltonian cycle search for AFL, in Season 2023.  
+  
+_Note:_ for AFL, the `Config` class in `./utils/config.py` requires that you update your email address here so that you satisfy [Squiggle](https://api.squiggle.com.au/#section_bots) appropriately.  
 
 Logs are found in `./.logs/`, with search file being the local datetime that particular run was triggered.  
   
