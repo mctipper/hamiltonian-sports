@@ -1,0 +1,100 @@
+{
+  "teams": [
+    {
+      "retirement": 9999,
+      "id": 3,
+      "logo": "/wp-content/themes/squiggle/assets/images/Carlton1976.png",
+      "abbrev": "CAR",
+      "name": "Carlton",
+      "debut": 1897
+    },
+    {
+      "retirement": 9999,
+      "debut": 1897,
+      "abbrev": "COL",
+      "logo": "/wp-content/themes/squiggle/assets/images/Collingwood1977.png",
+      "id": 4,
+      "name": "Collingwood"
+    },
+    {
+      "id": 5,
+      "retirement": 9999,
+      "logo": "/wp-content/themes/squiggle/assets/images/Essendon1976.png",
+      "abbrev": "ESS",
+      "name": "Essendon",
+      "debut": 1897
+    },
+    {
+      "abbrev": "GEE",
+      "debut": 1897,
+      "name": "Geelong",
+      "retirement": 9999,
+      "id": 7,
+      "logo": "/wp-content/themes/squiggle/assets/images/Geelong1976.png"
+    },
+    {
+      "debut": 1925,
+      "abbrev": "HAW",
+      "retirement": 9999,
+      "name": "Hawthorn",
+      "logo": "/wp-content/themes/squiggle/assets/images/Hawthorn1976.png",
+      "id": 10
+    },
+    {
+      "abbrev": "MEL",
+      "debut": 1897,
+      "retirement": 9999,
+      "name": "Melbourne",
+      "id": 11,
+      "logo": "/wp-content/themes/squiggle/assets/images/Melbourne1976.png"
+    },
+    {
+      "abbrev": "NOR",
+      "name": "North Melbourne",
+      "debut": 1925,
+      "retirement": 9999,
+      "id": 12,
+      "logo": "/wp-content/themes/squiggle/assets/images/NorthMelbourne1976.png"
+    },
+    {
+      "logo": "/wp-content/themes/squiggle/assets/images/Richmond1977.png",
+      "id": 14,
+      "name": "Richmond",
+      "retirement": 9999,
+      "debut": 1908,
+      "abbrev": "RIC"
+    },
+    {
+      "retirement": 9999,
+      "id": 15,
+      "logo": "/wp-content/themes/squiggle/assets/images/StKilda1977.png",
+      "abbrev": "STK",
+      "name": "St Kilda",
+      "debut": 1897
+    },
+    {
+      "name": "South Melbourne",
+      "logo": "/wp-content/themes/squiggle/assets/images/Sydney1977.png",
+      "id": 16,
+      "debut": 1897,
+      "abbrev": "SYD",
+      "retirement": 9999
+    },
+    {
+      "logo": "/wp-content/themes/squiggle/assets/images/Bulldogs1977.png",
+      "id": 18,
+      "retirement": 9999,
+      "debut": 1925,
+      "name": "Footscray",
+      "abbrev": "WBD"
+    },
+    {
+      "name": "Fitzroy",
+      "debut": 1897,
+      "abbrev": "FIT",
+      "logo": "/wp-content/themes/squiggle/assets/images/Fitzroy1977.png",
+      "retirement": 1996,
+      "id": 19
+    }
+  ]
+}

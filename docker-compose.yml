@@ -1,0 +1,15 @@
+version: '3'
+services:
+  hamiltoniansports:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: tail -f /dev/null
+    volumes:
+      - ./hamiltoniansports:/hamiltoniansports
+  hamiltoniansports-test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    depends_on:
+      - hamiltoniansports

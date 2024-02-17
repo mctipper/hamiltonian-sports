@@ -1,0 +1,84 @@
+{
+  "teams": [
+    {
+      "name": "Carlton",
+      "debut": 1897,
+      "abbrev": "CAR",
+      "logo": "/wp-content/themes/squiggle/assets/images/Carlton1950.png",
+      "id": 3,
+      "retirement": 9999
+    },
+    {
+      "retirement": 9999,
+      "debut": 1897,
+      "abbrev": "COL",
+      "logo": "/wp-content/themes/squiggle/assets/images/Collingwood1977.png",
+      "id": 4,
+      "name": "Collingwood"
+    },
+    {
+      "logo": "/wp-content/themes/squiggle/assets/images/Essendon1976.png",
+      "retirement": 9999,
+      "id": 5,
+      "debut": 1897,
+      "name": "Essendon",
+      "abbrev": "ESS"
+    },
+    {
+      "logo": "/wp-content/themes/squiggle/assets/images/Geelong1976.png",
+      "retirement": 9999,
+      "id": 7,
+      "debut": 1897,
+      "name": "Geelong",
+      "abbrev": "GEE"
+    },
+    {
+      "debut": 1897,
+      "name": "Melbourne",
+      "abbrev": "MEL",
+      "logo": "/wp-content/themes/squiggle/assets/images/Melbourne1976.png",
+      "id": 11,
+      "retirement": 9999
+    },
+    {
+      "abbrev": "RIC",
+      "debut": 1908,
+      "name": "Richmond",
+      "retirement": 9999,
+      "id": 14,
+      "logo": "/wp-content/themes/squiggle/assets/images/Richmond1908.png"
+    },
+    {
+      "debut": 1897,
+      "abbrev": "STK",
+      "retirement": 9999,
+      "name": "St Kilda",
+      "logo": "/wp-content/themes/squiggle/assets/images/StKilda1977.png",
+      "id": 15
+    },
+    {
+      "name": "South Melbourne",
+      "debut": 1897,
+      "abbrev": "SYD",
+      "logo": "/wp-content/themes/squiggle/assets/images/Sydney1960.png",
+      "retirement": 9999,
+      "id": 16
+    },
+    {
+      "abbrev": "FIT",
+      "debut": 1897,
+      "name": "Fitzroy",
+      "id": 19,
+      "retirement": 1996,
+      "logo": "/wp-content/themes/squiggle/assets/images/Fitzroy1977.png"
+    },
+    {
+      "name": "University",
+      "debut": 1908,
+      "abbrev": "UNI",
+      "logo": "/wp-content/themes/squiggle/assets/images/University.png",
+      "id": 20,
+      "retirement": 1914
+    }
+  ]
+}

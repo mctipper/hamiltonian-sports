@@ -1,0 +1,15 @@
+# nice light version of Python 3.10.12
+FROM python:3.10.12-slim-buster
+
+WORKDIR /hamiltoniansports
+
+# Copy the requirements file into the container and install
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application code and tests into the container
+COPY hamiltoniansports/ ./hamiltoniansports
+COPY tests/ .
+
+# Run the tests
+CMD ["python", "-m", "pytest", "--cov=hamiltoniansports", "--cov-report=html"]

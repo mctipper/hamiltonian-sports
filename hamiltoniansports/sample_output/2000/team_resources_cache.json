@@ -1,0 +1,132 @@
+{
+  "teams": [
+    {
+      "logo": "/wp-content/themes/squiggle/assets/images/Adelaide1999.png",
+      "id": 1,
+      "name": "Adelaide",
+      "retirement": 9999,
+      "debut": 1991,
+      "abbrev": "ADE"
+    },
+    {
+      "id": 2,
+      "logo": "/wp-content/themes/squiggle/assets/images/Brisbane1997.png",
+      "name": "Brisbane Lions",
+      "retirement": 9999,
+      "abbrev": "BRI",
+      "debut": 1987
+    },
+    {
+      "retirement": 9999,
+      "id": 3,
+      "logo": "/wp-content/themes/squiggle/assets/images/Carlton1997.png",
+      "abbrev": "CAR",
+      "debut": 1897,
+      "name": "Carlton"
+    },
+    {
+      "debut": 1897,
+      "name": "Collingwood",
+      "abbrev": "COL",
+      "logo": "/wp-content/themes/squiggle/assets/images/Collingwood1993.png",
+      "retirement": 9999,
+      "id": 4
+    },
+    {
+      "debut": 1897,
+      "name": "Essendon",
+      "abbrev": "ESS",
+      "logo": "/wp-content/themes/squiggle/assets/images/Essendon.png",
+      "id": 5,
+      "retirement": 9999
+    },
+    {
+      "debut": 1995,
+      "abbrev": "FRE",
+      "retirement": 9999,
+      "name": "Fremantle",
+      "logo": "/wp-content/themes/squiggle/assets/images/Fremantle1997.png",
+      "id": 6
+    },
+    {
+      "abbrev": "GEE",
+      "debut": 1897,
+      "name": "Geelong",
+      "retirement": 9999,
+      "id": 7,
+      "logo": "/wp-content/themes/squiggle/assets/images/Geelong2000.png"
+    },
+    {
+      "retirement": 9999,
+      "id": 10,
+      "logo": "/wp-content/themes/squiggle/assets/images/Hawthorn1997.png",
+      "abbrev": "HAW",
+      "name": "Hawthorn",
+      "debut": 1925
+    },
+    {
+      "debut": 1897,
+      "name": "Melbourne",
+      "abbrev": "MEL",
+      "logo": "/wp-content/themes/squiggle/assets/images/Melbourne1995.png",
+      "id": 11,
+      "retirement": 9999
+    },
+    {
+      "logo": "/wp-content/themes/squiggle/assets/images/NorthMelbourne2000.png",
+      "id": 12,
+      "retirement": 9999,
+      "debut": 1925,
+      "name": "Kangaroos",
+      "abbrev": "NOR"
+    },
+    {
+      "abbrev": "POR",
+      "name": "Port Adelaide",
+      "debut": 1997,
+      "id": 13,
+      "retirement": 9999,
+      "logo": "/wp-content/themes/squiggle/assets/images/PortAdelaide1997.png"
+    },
+    {
+      "name": "Richmond",
+      "debut": 1908,
+      "abbrev": "RIC",
+      "logo": "/wp-content/themes/squiggle/assets/images/Richmond1995.png",
+      "retirement": 9999,
+      "id": 14
+    },
+    {
+      "name": "St Kilda",
+      "debut": 1897,
+      "abbrev": "STK",
+      "logo": "/wp-content/themes/squiggle/assets/images/StKilda.png",
+      "id": 15,
+      "retirement": 9999
+    },
+    {
+      "name": "Sydney",
+      "id": 16,
+      "logo": "/wp-content/themes/squiggle/assets/images/Sydney1997.png",
+      "abbrev": "SYD",
+      "debut": 1897,
+      "retirement": 9999
+    },
+    {
+      "debut": 1987,
+      "name": "West Coast",
+      "abbrev": "WCE",
+      "logo": "/wp-content/themes/squiggle/assets/images/WestCoast1999.png",
+      "id": 17,
+      "retirement": 9999
+    },
+    {
+      "abbrev": "WBD",
+      "debut": 1925,
+      "name": "Western Bulldogs",
+      "id": 18,
+      "retirement": 9999,
+      "logo": "/wp-content/themes/squiggle/assets/images/Bulldogs1999.png"
+    }
+  ]
+}
