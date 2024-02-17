@@ -30,6 +30,12 @@ If you don't care about how the code works and just want to run it for yourself 
 
 ## Process  
 
+1. Validate command line arguments  
+1. Download and parse data from the pre-configured API  
+1. Sequentially by round, search for a hamiltonian cycle  
+1. If a hamiltonian cycle is found, draw and infographic  
+1. Output search results to json doc  
+
 Using command line arguments, the code will know which league and season to extract from the pre-configured API, parse the data and structure it for consumption by the algorithm. Should a hamiltonian cycle be found, an infographic will be generated with details of the cycle, and some extra details like permutations undertaken and individual game results making up the cycle.  
 
 ### Algorithms  
