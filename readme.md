@@ -5,7 +5,7 @@
 ![Docker](https://img.shields.io/badge/Docker-4.23.0-blue)
 ![Pydantic](https://img.shields.io/badge/Pydantic-2.5.3-blue)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8.2-blue)  
-[![Hamiltoniansports Tests](https://github.com/mctipper/hamiltoniansports/actions/workflows/deploy.yml/badge.svg)](https://github.com/mctipper/hamiltoniansports/actions/workflows/deploy.yml)
+[![Hamiltoniansports Tests](https://github.com/mctipper/hamiltonian-sports/actions/workflows/deploy.yml/badge.svg)](https://github.com/mctipper/hamiltonian-sports/actions/workflows/deploy.yml)
 ![Coverage](https://img.shields.io/badge/Coverage-82%25-green)  
 <!-- TODO test coverage badges -->
 
