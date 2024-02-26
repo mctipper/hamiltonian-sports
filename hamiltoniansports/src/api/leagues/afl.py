@@ -71,7 +71,7 @@ class AFLsquiggleAPI(APIAbstract):
             logger.debug("Loaded season_results from cache")
         else:
             season_result_data = self.api_response_helper(
-                url=f"{self.api_url}?q=games;year={str(self.season)}",
+                url=f"{self.api_url}?q=games;year={str(self.season)};complete=100",
                 headers=self.headers,
             )
             logger.debug("Loaded season_results from API")
