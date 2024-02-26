@@ -14,11 +14,11 @@ The purpose of this repo is to search-for and detect the first occurence of a ha
 ---
 | Team | Won against |  
 | :- | :- |  
-| 1 | 2, 3 |  
-| 2 | 3 |  
-| 3 | 1, 2 |  
+| Morwell | Moe, Traralgon |  
+| Moe | Traralgon |  
+| Traralgon | Morwell, Moe |  
 
-So team 1 has defeated teams 2 and 3, team 2 defeat team 3, and team 3 has defeated teams 1 and 2. Using this simple example, we can make a hamiltonian cycle from Team 1 -> Team 2 -> Team 3 -> Team 1. The above table is also a good demonstration of an adjacency graph, a neat data structure which helps define graph structure neatly (in this case, unweighted and undirected graph structure).  
+Morwell has defeated Moe and Traralgon. Moe has defeated Traralgon. Traralgon has defeated Morwell and Moe. Using this simple example, we can make a hamiltonian cycle from Morwell >> Moe >> Traralgon >> Morwell. The above table is also a good demonstration of an adjacency graph, a neat data structure which helps define graph structure neatly (in this case, unweighted and undirected graph structure).  
 
 The purpose of this exercise is to see when 'parity' first occured during a sports season, just for fun.  
 
