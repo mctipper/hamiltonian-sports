@@ -61,7 +61,7 @@ class GameResult(BaseModel):
         """validation method to ensure that winner and loser are not the same value"""
         if self.winner == self.loser:
             logger.debug(
-                f"{self.winner}\n{self.loser}\n{self.round}\n{self.winner_score}\n{self.loser_score}\n{self.dt}"
+                f"w: {self.winner}\nl: {self.loser}\nr: {self.round}\nws: {self.winner_score}\nls: {self.loser_score}\ndt: {self.dt}"
             )
             raise ValueError("Winner and loser cannot be the same")
         return self
@@ -75,7 +75,7 @@ class GameResult(BaseModel):
         """
         if self.winner_score == self.loser_score:
             logger.debug(
-                f"{self.winner}\n{self.loser}\n{self.round}\n{self.winner_score}\n{self.loser_score}\n{self.dt}"
+                f"w: {self.winner}\nl: {self.loser}\nr: {self.round}\nws: {self.winner_score}\nls: {self.loser_score}\ndt: {self.dt}"
             )
             raise ValueError("Winner score and loser score cannot be the same")
         return self
