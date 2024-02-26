@@ -132,27 +132,17 @@ class Algo:
 
     def _hamiltonian_cycle_permutation_logger(self) -> None:
         """helper function to log permutation progress, just helpful for eyeballing/ensuring compute is progressing"""
-        if self.permutation_counter < 101:
-            if self.permutation_counter % 10 == 0:
-                logger.info(f"{self.permutation_counter} permutations")
-        elif self.permutation_counter < 1001:
-            if self.permutation_counter % 100 == 0:
-                logger.info(f"{self.permutation_counter} permutations")
-        elif self.permutation_counter < 10001:
-            if self.permutation_counter % 1000 == 0:
-                logger.info(f"{self.permutation_counter} permutations")
-        elif self.permutation_counter < 100001:
-            if self.permutation_counter % 10000 == 0:
-                logger.info(f"{self.permutation_counter} permutations")
-        elif self.permutation_counter < 1000001:
-            if self.permutation_counter % 100000 == 0:
-                logger.info(f"{self.permutation_counter} permutations")
-        elif self.permutation_counter < 5000001:
-            if self.permutation_counter % 500000 == 0:
-                logger.info(f"{self.permutation_counter} permutations")
-        else:
+        thresholds = [10, 100, 1000, 10000, 100000, 500000, 1000000]
+
+        if self.permutation_counter > thresholds[-1]:
             if self.permutation_counter % 1000000 == 0:
                 logger.info(f"{self.permutation_counter} permutations")
+        else:
+            for threshold in thresholds:
+                if self.permutation_counter < threshold * 10:
+                    if self.permutation_counter % threshold == 0:
+                        logger.info(f"{self.permutation_counter} permutations")
+                    break
 
     def _find_hamiltonian_cycle(self, hc_length_target: int):
         """housing method to setup and then cur recursive algo"""
