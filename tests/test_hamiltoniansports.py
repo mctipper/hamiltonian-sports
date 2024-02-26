@@ -49,7 +49,7 @@ class TestHamiltonianSports(unittest.TestCase):
         with pytest.raises(RuntimeError):
             self.hc.create_infographic()
 
-    def test_api(self):
+    def test_assign_api(self):
         # cannot populate from api before api is assigned
         with pytest.raises(RuntimeError):
             self.hc.populate_from_api()
@@ -58,13 +58,12 @@ class TestHamiltonianSports(unittest.TestCase):
         self.hc.assign_api()
         self.assertIsInstance(self.hc.apicreator, APICreator)
 
+    def test_populate_from_api(self):
         # test populate from api calls correct APICreator method with correct arguments
+        self.hc.assign_api()
         with patch.object(self.hc, "apicreator", autospec=True) as mock_apicreator:
             self.hc.populate_from_api()
 
-            mock_apicreator.assign_api.assert_called_once_with(
-                league=self.hc.league, season=self.hc.season
-            )
             mock_apicreator.populate_from_api.assert_called_once_with(
                 clearcache=self.hc.clearcache
             )

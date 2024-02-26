@@ -29,17 +29,19 @@ class HamiltonianSports:
         self.season = season
         self.clearcache = clearcache
 
-    def assign_api(self) -> None:
+    def assign_api(self) -> "HamiltonianSports":
+        """initliases an APICreator composition class and assigns the correct API"""
         self.apicreator = APICreator()
+        self.apicreator.assign_api(league=self.league, season=self.season)
+        return self
 
     def populate_from_api(self) -> None:
         """uses the provided command line arguments to assign the correct API using composition"""
         if not hasattr(self, "apicreator"):
             raise RuntimeError("populate_from_api() called before assign_api()")
-        self.apicreator.assign_api(league=self.league, season=self.season)
         self.apicreator.populate_from_api(clearcache=self.clearcache)
 
-    def assign_algo(self) -> None:
+    def assign_algo(self) -> "HamiltonianSports":
         """assigns the algorithmn using composition.
         Only DFS is used at this stage, but have built it this way to allow other algos in the future maybe.
         """
@@ -50,13 +52,15 @@ class HamiltonianSports:
 
         self.algo = Algo(seasonresults=self.apicreator.api.seasonresults)
 
+        return self
+
     def hamiltonian_cycle_search(self) -> None:
         """uses the assigned algorithm to undertake the hamiltonian cycle search"""
         if not hasattr(self, "algo"):
             raise RuntimeError("hamiltonian_cycle_search() called before assign_algo()")
         self.algo.hamiltonian_cycle_search()
 
-    def design_infographic(self) -> None:
+    def design_infographic(self) -> "HamiltonianSports":
         """assigns the inforgraphic class using composition"""
         if not hasattr(self, "apicreator"):
             raise RuntimeError("design_infographic() called before assign_api()")
@@ -80,6 +84,8 @@ class HamiltonianSports:
             nteams=self.apicreator.api.seasonresults.nteams,
             save_location=self.apicreator.api.output_path,
         )
+
+        return self
 
     def create_infographic(self) -> None:
         """draws (and stores) the infographic"""
@@ -111,19 +117,16 @@ def main():
         league=av.args.league, season=av.args.season, clearcache=av.args.clearcache
     )
 
-    # get data from the api
-    hs.assign_api()
-    hs.populate_from_api()
+    # assign the api and get data from it
+    hs.assign_api().populate_from_api()
 
-    # run algorithm (will introduce other algorithms for fun later [maybe...])
-    hs.assign_algo()
-    hs.hamiltonian_cycle_search()
+    # assign and run algorithm (will introduce other algorithms for fun later [maybe...])
+    hs.assign_algo().hamiltonian_cycle_search()
 
     # if a result if found, report back and build infographic (if requested)
     if hs.algo.hc_found:
         logger.info("***|||   Hamiltonian Cycle found!   |||***")
-        hs.design_infographic()
-        hs.create_infographic()
+        hs.design_infographic().create_infographic()
     else:
         logger.info("No Hamiltonian Cycle Found...")
 
