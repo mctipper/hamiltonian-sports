@@ -3,6 +3,17 @@ from pathlib import Path
 from datetime import datetime
 
 
+class LazyFileHandler(logging.FileHandler):
+    """ delays the creation of the log file / dir until the log command is received
+    """
+    def _open(self):
+        # method overriding, create the dir if not exists
+        if not Path(self.baseFilename).parent.is_dir():
+            Path(self.baseFilename).parent.mkdir(parents=True, exist_ok=True)
+        # running the superclass _open() method creates the logfile
+        return super()._open()
+    
+
 class Logger:
     @staticmethod
     def setup(current_datetime: datetime, logname: str = "main"):
@@ -25,7 +36,7 @@ class Logger:
         if not logfilepath.parent.is_dir():
             logfilepath.parent.mkdir(parents=True, exist_ok=True)
 
-        f_handler = logging.FileHandler(logfilepath, delay=True)
+        f_handler = LazyFileHandler(logfilepath)
         f_handler.setLevel(logging.DEBUG)
 
         # create different formatters and add them to each handler
