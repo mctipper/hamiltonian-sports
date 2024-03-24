@@ -315,7 +315,9 @@ def test_season_results_model():
     assert all(isinstance(value, Team) for value in season_results.teams.values())
     assert isinstance(season_results.nrounds, int)
     assert isinstance(season_results.nteams, int)
+    assert isinstance(season_results.rounds_list, list)
     assert isinstance(season_results.team_ids, list)
+    assert season_results.rounds_list == list(season_results.round_results.keys())
     assert all(isinstance(team_id, int) for team_id in season_results.team_ids)
 
     # value checking

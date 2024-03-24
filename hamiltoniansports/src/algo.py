@@ -223,7 +223,7 @@ class Algo:
 
         # the main round-by-round loop, building the adjacency graph based on results
         # up-to that round, and run the _find_hamiltonian_cycle method for each in-sequence
-        for cur_round in range(1, self.seasonresults.nrounds + 1):
+        for cur_round in self.seasonresults.rounds_list:
             logger.info(f"Searching round {cur_round}...")
             team_w_no_loss_yet: bool = False
             cur_round_results: list[GameResult] = self.seasonresults.round_results[

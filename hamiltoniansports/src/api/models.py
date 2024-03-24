@@ -127,6 +127,11 @@ class SeasonResults(BaseModel):
     def nteams(self) -> int:
         """number of teams this season"""
         return len(self.teams)
+    
+    @property
+    def rounds_list(self) -> list:
+        """list of rounds"""
+        return list(self.round_results.keys())
 
     @property
     def team_ids(self) -> list[int]:
